@@ -41,8 +41,8 @@ User Stories:
 
 ### Links
 
-- Solution URL: [Code]()
-- Live Site URL: [Live]()
+- Solution URL: [Code](https://github.com/yhertekin/FCC/tree/main/Responsive%20Web%20Design/Survey%20Form)
+- Live Site URL: [Live](https://endearing-crepe-ddd9ab.netlify.app/)
 
 ## My process
 
