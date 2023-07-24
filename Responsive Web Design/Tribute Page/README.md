@@ -34,8 +34,8 @@ User Stories:
 
 ### Links
 
-- Solution URL: [Code]()
-- Live Site URL: [Live]()
+- Solution URL: [Code](https://github.com/yhertekin/FCC/tree/main/Responsive%20Web%20Design/Tribute%20Page)
+- Live Site URL: [Live](https://calm-panda-46d0c8.netlify.app/)
 
 ## My process
 
