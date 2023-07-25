@@ -40,8 +40,8 @@ User Stories:
 
 ### Links
 
--   Solution URL: [Code]()
--   Live Site URL: [Live]()
+-   Solution URL: [Code](https://github.com/yhertekin/FCC/tree/main/Responsive%20Web%20Design/Technical%20Documentation%20Page)
+-   Live Site URL: [Live](https://admirable-cucurucho-378131.netlify.app/)
 
 ## My process
 
