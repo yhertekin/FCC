@@ -40,8 +40,8 @@ User Stories:
 
 ### Links
 
-- Solution URL: [Code]()
-- Live Site URL: [Live]()
+- Solution URL: [Code](https://github.com/yhertekin/FCC/tree/main/Responsive%20Web%20Design/Product%20Landing%20Page)
+- Live Site URL: [Live](https://jolly-basbousa-ccca2c.netlify.app/)
 
 ## My process
 
