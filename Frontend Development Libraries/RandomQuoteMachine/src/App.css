@@ -12,6 +12,7 @@ body {
 }
 
 #quote-box {
+	margin: 1rem;
 	padding: 1rem;
 	border-radius: 0.5rem;
 	background-color: white;
