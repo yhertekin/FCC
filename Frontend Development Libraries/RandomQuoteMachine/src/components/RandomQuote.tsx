@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { IQuote } from "../interfaces";
 import { getRandomQuote } from "../QuoteApi";
-import Twitter from "./../assets/x-twitter.svg";
-import Quote from "./../assets/quote-left-solid.svg";
+import { getRandomColor } from "../helpers";
+import XIcon from "../assets/XIcon";
+import QuoteIcon from "../assets/QuoteIcon";
 
 const initialQuote: IQuote = {
 	_id: "",
@@ -17,26 +18,40 @@ const initialQuote: IQuote = {
 
 const RandomQuote = () => {
 	const [quote, setQuote] = useState<IQuote>(initialQuote);
+	const [color, setColor] = useState<string>(getRandomColor());
 
 	useEffect(() => {
+		setColor(() => getRandomColor());
 		getRandomQuote(setQuote);
 	}, []);
 
+	useEffect(() => {
+		const body = document.querySelector("body");
+		body.style.color = color;
+		body.style.backgroundColor = color;
+	}, [color]);
+
 	const buttonHandler = () => {
+		setColor(() => getRandomColor());
 		getRandomQuote(setQuote);
 	};
 
 	return (
 		<div id="quote-box">
 			<p id="text">
-				<img src={Quote} alt="quote icon" /> {quote?.content}
+				<QuoteIcon fill={color} width="1.5rem" height="1.5rem" /> {quote?.content}
 			</p>
 			<p id="author">-{quote?.author}</p>
 			<div className="buttons">
-				<a href="twitter.com/intent/tweet" target="_blank" id="tweet-quote">
-					<img src={Twitter} alt="twitter icon" />
+				<a
+					href="twitter.com/intent/tweet"
+					target="_blank"
+					id="tweet-quote"
+					style={{ backgroundColor: color }}
+				>
+					<XIcon fill="white" width="1.2rem" height="1.2rem" />
 				</a>
-				<button id="new-quote" onClick={buttonHandler}>
+				<button id="new-quote" onClick={buttonHandler} style={{ backgroundColor: color }}>
 					New Quote
 				</button>
 			</div>

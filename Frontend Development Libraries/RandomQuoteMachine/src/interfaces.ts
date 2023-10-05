@@ -8,3 +8,9 @@ export interface IQuote {
 	dateAdded: string;
 	dateModified: string;
 }
+
+export interface Icon {
+	fill?: string;
+	width?: string;
+	height?: string;
+}
