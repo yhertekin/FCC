@@ -7,6 +7,21 @@ body {
 #display,
 #calculationText {
 	text-align: right;
+	font-family: "Digital", sans-serif;
+	font-size: 3.3rem;
+	margin: 0;
+	height: 5.2rem;
+	overflow: hidden;
+	max-width: 300px;
+	margin-left: auto;
+}
+#display {
+	margin-bottom: 1rem;
+}
+
+.button {
+	font-family: "Share Tech Mono", monospace;
+	font-size: 1.7rem;
 }
 
 .container {
@@ -22,6 +37,7 @@ body {
 
 #clear {
 	grid-area: clear;
+	background-color: rgb(120, 40, 40);
 }
 
 #divide {
@@ -78,6 +94,7 @@ body {
 
 #equals {
 	grid-area: equals;
+	background-color: rgb(40, 40, 120);
 }
 
 #zero {

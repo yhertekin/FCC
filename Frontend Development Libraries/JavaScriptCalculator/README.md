@@ -1,27 +1,67 @@
-# React + TypeScript + Vite
+# Free Code Camp - JavaScript Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [JavaScript Calculator](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-javascript-calculator).
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### The challenge
 
-- Configure the top-level `parserOptions` property like this:
+User Stories:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- User Story #1: My calculator should contain a clickable element containing an = (equal sign) with a corresponding id="equals".
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- User Story #2: My calculator should contain 10 clickable elements containing one number each from 0-9, with the following corresponding IDs: id="zero", id="one", id="two", id="three", id="four", id="five", id="six", id="seven", id="eight", and id="nine".
+
+- User Story #3: My calculator should contain 4 clickable elements each containing one of the 4 primary mathematical operators with the following corresponding IDs: id="add", id="subtract", id="multiply", id="divide".
+
+- User Story #4: My calculator should contain a clickable element containing a . (decimal point) symbol with a corresponding id="decimal".
+
+- User Story #5: My calculator should contain a clickable element with an id="clear".
+
+- User Story #6: My calculator should contain an element to display values with a corresponding id="display".
+
+- User Story #7: At any time, pressing the clear button clears the input and output values, and returns the calculator to its initialized state; 0 should be shown in the element with the id of display.
+
+- User Story #8: As I input numbers, I should be able to see my input in the element with the id of display.
+
+- User Story #9: In any order, I should be able to add, subtract, multiply and divide a chain of numbers of any length, and when I hit =, the correct result should be shown in the element with the id of display.
+
+- User Story #10: When inputting numbers, my calculator should not allow a number to begin with multiple zeros.
+
+- User Story #11: When the decimal element is clicked, a . should append to the currently displayed value; two . in one number should not be accepted.
+
+- User Story #12: I should be able to perform any operation (+, -, \*, /) on numbers containing decimal points.
+
+- User Story #13: If 2 or more operators are entered consecutively, the operation performed should be the last operator entered (excluding the negative (-) sign). For example, if 5 + _ 7 = is entered, the result should be 35 (i.e. 5 _ 7); if 5 _ - 5 = is entered, the result should be -25 (i.e. 5 _ (-5)).
+
+- User Story #14: Pressing an operator immediately following = should start a new calculation that operates on the result of the previous evaluation.
+
+- User Story #15: My calculator should have several decimal places of precision when it comes to rounding (note that there is no exact standard, but you should be able to handle calculations like 2 / 7 with reasonable precision to at least 4 decimal places).
+
+### Screenshots
+
+![](./screenshots/desktop.png)
+![](./screenshots/mobile.png)
+
+### Links
+
+- Solution URL: [Code](https://github.com/yhertekin/FCC/tree/main/Frontend%20Development%20Libraries/JavaScriptCalculator)
+- Live Site URL: [Live]()
+
+## My process
+
+### Built with
+
+- React
+- TypeScript
+- Vite
+- CSS
