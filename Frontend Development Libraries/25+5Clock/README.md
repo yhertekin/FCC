@@ -80,8 +80,8 @@ User Stories:
 
 ### Links
 
--   Solution URL: [Code]()
--   Live Site URL: [Live]()
+-   Solution URL: [Code](https://github.com/yhertekin/FCC/tree/main/Frontend%20Development%20Libraries/25%2B5Clock)
+-   Live Site URL: [Live](https://lively-smakager-c23054.netlify.app/)
 
 ## My process
 
