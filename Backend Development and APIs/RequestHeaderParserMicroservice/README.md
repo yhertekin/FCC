@@ -7,7 +7,7 @@ This is a solution to the [Request Header Parser Microservice](https://www.freec
 - [Overview](#overview)
   - [Tests](#tests)
   - [Usage](#usage)
-    - [Get Timestamp](#get-timestamp)
+    - [Get Request](#get-timestamp)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -22,7 +22,7 @@ This is a solution to the [Request Header Parser Microservice](https://www.freec
 
 ### Usage
 
-#### Get Timestamp
+#### Get Request
 
 ##### Request
 
@@ -30,7 +30,7 @@ This is a solution to the [Request Header Parser Microservice](https://www.freec
 GET / api / whoami;
 ```
 
-##### Responce
+##### Response
 
 ```json
 {
