@@ -47,7 +47,7 @@ POST / api / users;
 
 ```json
 {
-	username: "John Doe";
+	"username": "John Doe"
 }
 ```
 
